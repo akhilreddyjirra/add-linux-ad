@@ -21,3 +21,4 @@ echo "Your new hostname is $newhost"
 echo "Your nameserver is : $(cat /etc/resolv.conf | grep nameserver | awk '{print  $2}')"
 echo "nameserver 192.168.1.5" > /etc/resolv.conf
 hostnamectl set-hostname $newhost
+cat /etc/hosts
